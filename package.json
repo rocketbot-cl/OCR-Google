@@ -1,0 +1,108 @@
+{
+    "author":"Danilo Toro - Danilo.toro@rocketbot.cl",
+    "description": "Modulo para aplicar OCR sobre una imagen web o archivo",
+    "disclaimer":"THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
+    "version":"0.1",
+    "license": "MIT",
+    "homepage":"http://rockertbot.cl",
+    "linux": true,
+    "windows":true,
+    "mac":true,
+    "docker":true,
+    "name": "OCR-Google",
+    "dependencies": {
+        "requests": "2.21.0"
+    },
+    "title": {
+        "en": "OCR Google",
+        "es": "OCR Google",
+        "cn": "OCR Google"
+    },
+    "icon": " data:image/png;base64,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",
+    "children": [
+
+        {
+            "en": {
+                "title": "OCR Google convert file",
+                "description": "Extract text from file.",
+                "title_options": null,
+                "options":null
+            },
+            "es": {
+                "title": "OCR Google convertir imagen",
+                "description": "Extrae texto de una imagen.",
+                "title_options": null,
+                "options":null
+            },
+            "form": {
+                "css": "modal-lg",
+                "inputs": [
+                    {
+                        "type": "file_select",
+                        "placeholder": {
+                            "es": "Archivo de Imagen o URL",
+                            "en": "Image file or url"
+                        },
+                        "title": {
+                            "es": "Imagen:",
+                            "en": "Image:"
+                        },
+                        "help": {
+                            "es": "Ruta o url de la imagen",
+                            "en": "File Path or url of the image "
+                        },
+                        "id": "image_path",
+                        "css": "col-md-12"
+                    },
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "Api key",
+                            "en": "Api key"
+                        },
+                        "title": {
+                            "es": "Ingrese la ruta de sus credenciales",
+                            "en": "Input credential path"
+                        },
+                        "help": {
+                            "en": "Obtain your key on https://console.cloud.google.com/apis/credentials",
+                            "es": "Busque su key en https://console.cloud.google.com/apis/credentials "
+                        },
+                        "id": "api_key",
+                        "css": "col-md-8"
+                    },                    
+                    {
+                        "type": "input",
+                        "placeholder": {
+                            "es": "{resultado}",
+                            "en": "{result}"
+                        },
+                        "title": {
+                            "es": "Resutlado",
+                            "en": "Result"
+                        },
+                        "help": {
+                            "en": "Variable where the result is stored without {}",
+                            "es": "Variable donde se almacena el resultado sin {}"
+                        },
+                        "id": "result",
+                        "css": "col-md-4"
+                    }
+
+                ]
+            },
+            "video_youtube": "",
+            "icon": "  data:image/png;base64,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",
+            "module": "GetOCR",
+            "module_name": "OCR-Google",
+            "visible": true,
+            "options": false,
+            "father": "module",
+            "group": "scripts",
+            "linux": true,
+            "windows":true,
+            "mac":true,
+            "docker":true
+        }
+    ]
+}
