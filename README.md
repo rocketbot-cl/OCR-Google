@@ -5,7 +5,7 @@ Module for OCR to an image
 
 <ul>
   <li>
-    For get credentials go to <a href="https://console.cloud.google.com/apis/credentials">
+    To get credentials go to <a href="https://console.cloud.google.com/apis/credentials">
     Google Credentials
     </a>
   </li>
