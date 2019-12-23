@@ -69,7 +69,7 @@ try:
     response = requests.post("https://vision.googleapis.com/v1/images:annotate?key={key}".format(key=api_key),
                              data=body)
     json_resp = response.json()
-    #print(json_resp)
+    print(json_resp)
     if result:
         texto = json_resp["responses"]
 
