@@ -70,10 +70,13 @@ try:
                              data=body)
     json_resp = response.json()
     print(json_resp)
-    if result:
+    if "error" in json_resp:
+        SetVar(result, json_resp["error"]["message"])
+        raise Exception(json_resp["error"]["message"])
+    if "responses" in json_resp:
         texto = json_resp["responses"]
-
         SetVar(result, json.dumps(texto))
+
 except Exception as e:
     PrintException()
     raise e
