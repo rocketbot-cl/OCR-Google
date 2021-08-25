@@ -69,7 +69,7 @@ try:
     response = requests.post("https://vision.googleapis.com/v1/images:annotate?key={key}".format(key=api_key),
                              data=body)
     json_resp = response.json()
-    print(json_resp)
+    
     if "error" in json_resp:
         SetVar(result, json_resp["error"]["message"])
         raise Exception(json_resp["error"]["message"])
